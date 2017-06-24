@@ -1,7 +1,9 @@
 package application;
 	
 import javafx.application.Application;
+import javafx.event.EventHandler;
 import javafx.stage.Stage;
+import javafx.stage.WindowEvent;
 import javafx.scene.Scene;
 import javafx.scene.control.Label;
 //import javafx.scene.control.SplitPane;
@@ -20,6 +22,15 @@ public class Main extends Application {
 			scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
 			primaryStage.setScene(scene);
 			primaryStage.setTitle("本地文件管理");
+			primaryStage.setOnCloseRequest(new EventHandler<WindowEvent>() {
+				
+				@Override
+				public void handle(WindowEvent event) {
+					// TODO Auto-generated method stub
+					System.out.println("点叉关闭");
+					System.exit(1);
+				}
+			});
 			primaryStage.show();
 //			System.out.println(HomePageController.getShow_load_info());
 			new Thread(){

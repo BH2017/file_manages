@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.FlowPane?>
+
+<SplitPane fx:id="split_h1" dividerPositions="0.20066889632107024" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="630.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.HomePageController">
+  <items>
+    <AnchorPane id="split_h1L" maxWidth="180.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="398.0" prefWidth="154.0">
+         <children>
+            <TreeTableView layoutX="-60.0" layoutY="-12.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="398.0" prefWidth="154.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+              <columns>
+                <TreeTableColumn maxWidth="180.0" minWidth="180.0" prefWidth="180.0" text="路径图--" />
+              </columns>
+            </TreeTableView>
+         </children></AnchorPane>
+    <AnchorPane id="split_h1R" minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+         <children>
+            <SplitPane dividerPositions="0.050505050505050504" layoutX="100.0" layoutY="65.0" orientation="VERTICAL" prefHeight="398.0" prefWidth="438.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+              <items>
+                <AnchorPane maxHeight="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="160.0">
+                     <children>
+                        <HBox alignment="CENTER_LEFT" layoutX="18.0" layoutY="-36.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="436.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <TextField fx:id="input_path" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="353.0" promptText="输入路径" text="输入路径" HBox.hgrow="ALWAYS" />
+                              <Button id="btn_search" fx:id="btn_search" lineSpacing="2.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#doSearch" prefHeight="29.0" prefWidth="82.0" text="搜索" textFill="#c6a72a">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </HBox>
+                     </children>
+                  </AnchorPane>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                     <children>
+                        <Label layoutX="187.0" layoutY="165.0" text="这里显示搜索详情" />
+                     </children>
+                  </AnchorPane>
+              </items>
+            </SplitPane>
+         </children></AnchorPane>
+  </items>
+</SplitPane>
